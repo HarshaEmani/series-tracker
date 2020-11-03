@@ -35,12 +35,14 @@ class MyCard extends Component {
             <Card.Text>
               Maintain a list of movies and series from {this.props.ott}.
             </Card.Text>
-            <Button
-              style={{ backgroundColor: "" }}
-              onClick={this.NetflixHandler}
-            >
-              <Link to={`/${this.props.ott}`}>Click Me!</Link>
-            </Button>
+            <Link to={`/${this.props.ott}`}>
+              <Button
+                style={{ backgroundColor: "" }}
+                onClick={this.NetflixHandler}
+              >
+                Click Me!
+              </Button>
+            </Link>
           </Card.Body>
         </Card>
       </div>
