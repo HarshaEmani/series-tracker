@@ -8,23 +8,26 @@ class MyCard extends Component {
     super(props);
 
     this.state = {};
+
+    function netflixHandler() {
+      return;
+    }
   }
 
   render() {
     return (
-      <div>
+      <div className="cardStyles">
         <Card
-          className="flip-card-front"
           style={{
             width: "15rem",
-            backgroundColor: this.props.color,
-            // position: "absolute",
             margin: "25px",
             padding: "10px auto",
-            position: "relative",
-            float: "left",
-            top: "250px",
-            left: "250px",
+            backgroundColor: this.props.color,
+            // position: "absolute",
+            // position: "relative",
+            // float: "left",
+            // top: "250px",
+            // left: "250px",
           }}
         >
           <Card.Body>
@@ -36,10 +39,7 @@ class MyCard extends Component {
               Maintain a list of movies and series from {this.props.ott}.
             </Card.Text>
             <Link to={`/${this.props.ott}`}>
-              <Button
-                style={{ backgroundColor: "" }}
-                onClick={this.NetflixHandler}
-              >
+              <Button style={{ backgroundColor: "" }} onClick={() => {}}>
                 Click Me!
               </Button>
             </Link>
