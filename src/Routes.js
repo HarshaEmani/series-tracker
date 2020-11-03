@@ -4,7 +4,6 @@ import Home from "./Components/Home/Home";
 import Netflix from "./Components/Netflix/Netflix";
 import Prime from "./Components/Prime/Prime";
 import Anime from "./Components/Anime/Anime";
-import MyCard from "./Components/MyCard/MyCard"
 
 function Routes() {
   return (

@@ -9,9 +9,9 @@ class MyCard extends Component {
 
     this.state = {};
 
-    function netflixHandler() {
-      return;
-    }
+    // function netflixHandler() {
+    //   return;
+    // }
   }
 
   render() {
